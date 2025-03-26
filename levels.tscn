@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://levels.gd" type="Script" id=1]
+[ext_resource path="res://sounds/click.wav" type="AudioStream" id=2]
+
+[node name="levels" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+
+[node name="click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color( 0.0470588, 0.0431373, 0.0431373, 1 )
+margin_right = 1305.0
+margin_bottom = 802.0
+
+[node name="title" type="Label" parent="."]
+margin_left = 41.0
+margin_top = 57.0
+margin_right = 103.0
+margin_bottom = 72.0
+rect_scale = Vector2( 6.29794, 8.28864 )
+text = "Niveaux :"
+
+[node name="level1_button" type="Button" parent="."]
+margin_left = 101.0
+margin_top = 400.0
+margin_right = 214.0
+margin_bottom = 445.0
+rect_scale = Vector2( 1.55319, 1.33905 )
+text = "Niveau 1"
+
+[node name="Retour" type="Button" parent="."]
+margin_left = 76.0
+margin_top = 600.0
+margin_right = 171.0
+margin_bottom = 636.0
+rect_scale = Vector2( 2.42534, 2.19577 )
+text = "Retour"
+
+[node name="level2_button" type="Button" parent="."]
+margin_left = 400.0
+margin_top = 400.0
+margin_right = 513.0
+margin_bottom = 445.0
+rect_scale = Vector2( 1.55319, 1.33905 )
+text = "Niveau 2"
+
+[connection signal="pressed" from="level1_button" to="." method="_on_level1_button_pressed"]
+[connection signal="pressed" from="Retour" to="." method="_on_Retour_pressed"]
+[connection signal="pressed" from="level2_button" to="." method="_on_level1_button_pressed"]

@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Game_over.gd" type="Script" id=1]
+[ext_resource path="res://sounds/click.wav" type="AudioStream" id=2]
+
+[node name="Game_over" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+
+[node name="click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color( 0.0470588, 0.0431373, 0.0431373, 1 )
+margin_right = 1305.0
+margin_bottom = 802.0
+
+[node name="game_over_label" type="Label" parent="."]
+margin_left = 425.0
+margin_top = 57.0
+margin_right = 502.0
+margin_bottom = 72.0
+rect_scale = Vector2( 6.29794, 8.28864 )
+text = "GAME OVER"
+
+[node name="Play_again" type="Button" parent="."]
+margin_left = 525.0
+margin_top = 400.0
+margin_right = 650.0
+margin_bottom = 435.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Rejouer"
+
+[node name="Quitter" type="Button" parent="."]
+margin_left = 525.0
+margin_top = 580.0
+margin_right = 650.0
+margin_bottom = 615.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Quitter"
+
+[connection signal="pressed" from="Play_again" to="." method="_on_Play_again_pressed"]
+[connection signal="pressed" from="Quitter" to="." method="_on_Quitter_pressed"]

@@ -1,0 +1,177 @@
+[gd_scene load_steps=7 format=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+emission_shape = 2
+emission_box_extents = Vector3( 100, 1, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 10, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+
+[sub_resource type="ParticlesMaterial" id=2]
+emission_shape = 2
+emission_box_extents = Vector3( 100, 1, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 10, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+
+[sub_resource type="ParticlesMaterial" id=3]
+emission_shape = 2
+emission_box_extents = Vector3( 100, 1, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 10, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+
+[sub_resource type="ParticlesMaterial" id=4]
+emission_shape = 2
+emission_box_extents = Vector3( 100, 1, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 10, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+
+[sub_resource type="ParticlesMaterial" id=5]
+emission_shape = 2
+emission_box_extents = Vector3( 100, 1, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 10, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+
+[sub_resource type="ParticlesMaterial" id=6]
+emission_shape = 2
+emission_box_extents = Vector3( 100, 1, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 10, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+
+[node name="Snow particles" type="Node2D"]
+
+[node name="Particles2D" type="Particles2D" parent="."]
+position = Vector2( 84, -139 )
+amount = 100
+lifetime = 10.0
+speed_scale = 2.0
+randomness = 1.0
+process_material = SubResource( 1 )
+
+[node name="Particles2D2" type="Particles2D" parent="."]
+position = Vector2( 184, -139 )
+amount = 100
+lifetime = 10.0
+speed_scale = 2.0
+randomness = 1.0
+process_material = SubResource( 2 )
+
+[node name="Particles2D3" type="Particles2D" parent="."]
+position = Vector2( 284, -139 )
+amount = 100
+lifetime = 10.0
+speed_scale = 2.0
+randomness = 1.0
+process_material = SubResource( 3 )
+
+[node name="Particles2D4" type="Particles2D" parent="."]
+position = Vector2( 384, -139 )
+amount = 100
+lifetime = 10.0
+speed_scale = 2.0
+randomness = 1.0
+process_material = SubResource( 4 )
+
+[node name="Particles2D5" type="Particles2D" parent="."]
+position = Vector2( 484, -139 )
+amount = 100
+lifetime = 10.0
+speed_scale = 2.0
+randomness = 1.0
+process_material = SubResource( 5 )
+
+[node name="Particles2D6" type="Particles2D" parent="."]
+position = Vector2( 584, -139 )
+amount = 100
+lifetime = 10.0
+speed_scale = 2.0
+randomness = 1.0
+process_material = SubResource( 6 )
+
+[node name="Particles2D7" type="Particles2D" parent="."]
+position = Vector2( 687, -215 )
+scale = Vector2( 2, 2 )
+amount = 100
+lifetime = 10.0
+speed_scale = 2.0
+randomness = 1.0
+process_material = SubResource( 6 )
+
+[node name="Particles2D8" type="Particles2D" parent="."]
+position = Vector2( 819, -201 )
+scale = Vector2( 2, 2 )
+amount = 100
+lifetime = 10.0
+speed_scale = 2.0
+randomness = 1.0
+process_material = SubResource( 6 )
+
+[node name="Particles2D9" type="Particles2D" parent="."]
+position = Vector2( 1105, -219 )
+scale = Vector2( 2, 2 )
+amount = 100
+lifetime = 10.0
+speed_scale = 2.0
+randomness = 1.0
+process_material = SubResource( 6 )
+
+[node name="Particles2D10" type="Particles2D" parent="."]
+position = Vector2( 984, -148 )
+amount = 100
+lifetime = 10.0
+speed_scale = 2.0
+randomness = 1.0
+process_material = SubResource( 6 )
+
+[node name="Particles2D11" type="Particles2D" parent="."]
+position = Vector2( 1092, -106 )
+amount = 100
+lifetime = 10.0
+speed_scale = 2.0
+randomness = 1.0
+process_material = SubResource( 6 )
+
+[node name="Particles2D12" type="Particles2D" parent="."]
+position = Vector2( 1278, -132 )
+amount = 100
+lifetime = 10.0
+speed_scale = 2.0
+randomness = 1.0
+process_material = SubResource( 6 )
+
+[node name="Particles2D13" type="Particles2D" parent="."]
+position = Vector2( 1536, -227 )
+scale = Vector2( 2, 2 )
+amount = 100
+lifetime = 10.0
+speed_scale = 2.0
+randomness = 1.0
+process_material = SubResource( 6 )
+
+[node name="Particles2D14" type="Particles2D" parent="."]
+position = Vector2( 1948, -256 )
+scale = Vector2( 2, 2 )
+amount = 100
+lifetime = 10.0
+speed_scale = 2.0
+randomness = 1.0
+process_material = SubResource( 6 )
+
+[node name="Particles2D15" type="Particles2D" parent="."]
+position = Vector2( 2356, -247 )
+scale = Vector2( 2, 2 )
+amount = 100
+lifetime = 10.0
+speed_scale = 2.0
+randomness = 1.0
+process_material = SubResource( 6 )

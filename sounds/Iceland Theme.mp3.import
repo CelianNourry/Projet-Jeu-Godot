@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Iceland Theme.mp3-791ea77ddce512be291231881f95315f.mp3str"
+
+[deps]
+
+source_file="res://sounds/Iceland Theme.mp3"
+dest_files=[ "res://.import/Iceland Theme.mp3-791ea77ddce512be291231881f95315f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
